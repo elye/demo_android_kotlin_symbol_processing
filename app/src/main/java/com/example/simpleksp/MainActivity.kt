@@ -16,8 +16,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     @Hacked
-    private fun internalFunction() = {}
+    private fun internalPrivateFunction() = {}
+
+    @Hacked
+    fun internalPublicFunction() = {}
+
 }
 
 @Hacked
-fun externalFunction() = {}
+fun externalFunction() {}

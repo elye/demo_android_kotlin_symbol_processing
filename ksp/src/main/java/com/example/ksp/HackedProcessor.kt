@@ -45,7 +45,7 @@ internal class HackedProcessor(
             newLine()
         }
 
-        environment.logger.info("DONE!")
+        environment.logger.warn("PRINTED: \n\n$fileText")
 
         createFileWithText(sourceFiles, fileText)
         return (hackedFunctions).filterNot { it.validate() }.toList()
